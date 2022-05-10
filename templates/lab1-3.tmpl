@@ -1,0 +1,55 @@
+
+{% extends 'base.tmpl' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table style="border-style: solid; border-collapse:collapse;">
+    <tr>
+        <td style="border-style: solid; width: 17%">Умова</td>
+        <td style="border-style: solid; width: 17%">a</td>
+        <td style="border-style: solid; width: 17%">b</td>
+        <td style="border-style: solid; width: 17%">c</td>
+        <td style="border-style: solid; width: 17%">v</td>
+        <td style="border-style: solid; width: 17%">s</td>
+    </tr>
+    <tr>
+        <td style="border-style: solid; width: 17%">{{condition}}</td>
+        <td style="border-style: solid; width: 17%">{{A}}</td>
+        <td style="border-style: solid; width: 17%">{{B}}</td>
+        <td style="border-style: solid; width: 17%">{{C}}</td>
+        <td style="border-style: solid; width: 17%">{{V}}</td>
+        <td style="border-style: solid; width: 17%">{{S}}</td>
+    </tr>
+
+   </table>
+        <br>
+        <br>
+        <br>
+        <br>
+      <table style="border-style: solid; border-collapse:collapse;">
+    <tr>
+        <td style="border-style: solid; width: 17%">Умова</td>
+        <td style="border-style: solid; width: 17%">Number</td>
+        <td style="border-style: solid; width: 17%">N1</td>
+        <td style="border-style: solid; width: 17%">N2</td>
+    </tr>
+    <tr>
+        <td style="border-style: solid; width: 17%">{{condition1}}</td>
+        <td style="border-style: solid; width: 17%">{{Number}}</td>
+        <td style="border-style: solid; width: 17%">{{N1}}</td>
+        <td style="border-style: solid; width: 17%">{{N2}}</td>
+    </tr>
+   </table>
+</body>
+</html>
+
+{% endblock content %}

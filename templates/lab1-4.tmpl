@@ -1,0 +1,26 @@
+{% extends 'base.tmpl' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{cond}}</h1>
+    <h2>First number: {{n1}}</h2>
+    <h3>Second number: {{n2}}</h3>
+    <h4>Result: {{res}}</h4>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtFn6UG8pU88U91RSf1l8lrIL85cTGZDt-w&usqp=CAU" alt="">
+	<ol> {{cond1}}
+        <li>X point: {{x1}}</li>
+        <li>Y point: {{y1}}</li>
+        <li>Result: {%if (x1==0 and y1==0)%} 0 {%elseif (x1 == 0)%} 1 {%elseif (y1 == 0)%} 2 {%else%} 3 {%endif%}</li>
+    </ol>
+</body>
+</html>
+
+{% endblock content %}

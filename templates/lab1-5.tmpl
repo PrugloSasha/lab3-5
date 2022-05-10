@@ -1,0 +1,34 @@
+{% extends 'base.tmpl' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <table style="border-style: solid; border-collapse:collapse;">
+    <tr>
+        <td style="border-style: solid; width: 17%">Умова</td>
+        <td style="border-style: solid; width: 17%">Choose</td>
+        <td style="border-style: solid; width: 17%">Number</td>
+        <td style="border-style: solid; width: 17%">Result</td>
+    </tr>
+    <tr>
+        <td style="border-style: solid; width: 17%">{{cond}}</td>
+        <td style="border-style: solid; width: 17%">{{choose}}</td>
+        <td style="border-style: solid; width: 17%">{{num}}</td>
+        <td style="border-style: solid; width: 17%">{{res}} metrs</td>
+    </tr>
+   </table>
+       <h1>{{cond1}}</h1>
+    <h2>Years: {{years}}</h2>
+    <h3>Result: {{res1}}</h3>
+</body>
+</html>
+
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Первый сайт</title>
+ <link rel="stylesheet" href="{{style}}">
+ </head>
+ <body>
+  <div id="container">
+   <div id="header">Наш первый сайт
+   </div>
+   <div id="menu">
+    <p><a href="index.php">Главная</a></p>
+    <p><a href="lab1.php">Лабораторная работа №1</a></p>
+    <p><a href="lab2.php">Лабораторная работа №2</a></p>
+    <p><a href="lab3.php">Лабораторная работа №3</a></p>
+    <p><a href="lab4.php">Лабораторная работа №4</a></p>
+    <p><a href="lab5.php">Лабораторная работа №5</a></p>
+ <p><a href="administrator/index_admin.php">Административный раздел</a></p>
+   </div>
+   <div id="content">
+    {% block content %}
+
+    {% endblock content %}  
+   </div>
+   <div id="footer">&copy; 2022
+   </div>
+  </div>
+ </body>
+</html>	
